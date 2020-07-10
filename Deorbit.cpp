@@ -28,8 +28,17 @@ int main()
                      
     Vel_Sound=sqrt(1.4*287*(Temp+273.15);
     Mach = Vel/Vel_Sound;
-
-     
+    
+    int i = 0;
+    float Pres_impact;
+    float Pres_total;
+    Pres_impact = Pres_Static * ((1+.2Mach^2)^(7/2)-1);
+    Pres_total=Pres_Static + Pres_impact + Atmo_Dense * G_Alt * Alt;
+    
+    Mu_0 = .01480;
+    Suth_Const = 240;
+    Temp_ref_visc = 527.67;
+    Temp_Rank = Temp * (9/5) +491.67;
  
     return 0;
 }
