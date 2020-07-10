@@ -24,12 +24,18 @@
     <ClCompile Include="Deorbit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Constants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EDLPart1.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Deorbit.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
