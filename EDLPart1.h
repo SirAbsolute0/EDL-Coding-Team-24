@@ -1,4 +1,4 @@
-//This is the header file for function protos for EDL Part 1 (handling by Peter)
+//This is the header file for function protos for EDL Part 1 
 #define _USE_MATH_DEFINES
 #include <iostream>
 #include <cmath>
@@ -6,6 +6,9 @@
 
 using namespace std;
 
-double Aeroshell_A (double);
-double Mass(); 
+float Aeroshell_A (float);
+float Mass(); 
+float Temp(float);
+float Press_Static(float);
+float Atmos_Dense(float);
 
