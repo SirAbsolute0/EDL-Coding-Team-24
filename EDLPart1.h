@@ -6,9 +6,9 @@
 
 using namespace std;
 
-float Aeroshell_A (float);
-float Mass(); 
-float Temp(float);
-float Press_Static(float);
-float Atmos_Dense(float);
+double Aeroshell_A (double);
+double Mass(); 
+double Temp(double);
+double Press_Static(double);
+double Atmos_Dense(double);
 

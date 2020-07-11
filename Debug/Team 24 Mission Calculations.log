@@ -1,39 +1,4 @@
-﻿  Constants.cpp
-O:\All GitHub Projects\Team 24 Mission Calculations\Constants.cpp(10,6): error C2734: 'M_EDL': 'const' object must be initialized if not 'extern'
-O:\All GitHub Projects\Team 24 Mission Calculations\Constants.cpp(11,9): error C2734: 'M_Lander': 'const' object must be initialized if not 'extern'
-O:\All GitHub Projects\Team 24 Mission Calculations\Constants.cpp(12,12): error C2734: 'M_Aeroshell': 'const' object must be initialized if not 'extern'
-O:\All GitHub Projects\Team 24 Mission Calculations\Constants.cpp(13,17): warning C4305: 'initializing': truncation from 'double' to 'float'
-O:\All GitHub Projects\Team 24 Mission Calculations\Constants.cpp(16,38): warning C4305: 'initializing': truncation from 'double' to 'float'
-O:\All GitHub Projects\Team 24 Mission Calculations\Constants.cpp(17,48): warning C4305: 'initializing': truncation from 'double' to 'float'
-O:\All GitHub Projects\Team 24 Mission Calculations\Constants.cpp(19,20): error C2734: 'Delta_V': 'const' object must be initialized if not 'extern'
-  Deorbit.cpp
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.h(12,18): warning C4305: 'initializing': truncation from 'double' to 'float'
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.h(16,7): error C2365: 'Delta_V': redefinition; previous definition was 'data variable'
-O:\All GitHub Projects\Team 24 Mission Calculations\Constants.h(21): message : see declaration of 'Delta_V'
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.cpp(12,7): error C2365: 'Delta_V': redefinition; previous definition was 'data variable'
-O:\All GitHub Projects\Team 24 Mission Calculations\Constants.h(21): message : see declaration of 'Delta_V'
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.cpp(20,24): error C2064: term does not evaluate to a function taking 0 arguments
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.cpp(26,32): error C2065: 'Alt': undeclared identifier
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.cpp(38,29): error C2660: 'Bal_num': function does not take 0 arguments
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.cpp(30,7): message : see declaration of 'Bal_num'
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.cpp(38,41): error C2065: 'Atmo_Dense': undeclared identifier
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.cpp(38,52): error C2143: syntax error: missing ')' before ';'
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.cpp(44,23): error C2065: 'Temp': undeclared identifier
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.cpp(44,37): error C2143: syntax error: missing ')' before ';'
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.cpp(55,36): error C2065: 'Atmo_Dense': undeclared identifier
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.cpp(60,43): error C2065: 'Alt': undeclared identifier
-  EDLPart1.cpp
-O:\All GitHub Projects\Team 24 Mission Calculations\EDLPart1.cpp(5,15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-O:\All GitHub Projects\Team 24 Mission Calculations\EDLPart1.cpp(17,17): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-O:\All GitHub Projects\Team 24 Mission Calculations\EDLPart1.cpp(21,15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-O:\All GitHub Projects\Team 24 Mission Calculations\EDLPart1.cpp(27,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-O:\All GitHub Projects\Team 24 Mission Calculations\EDLPart1.cpp(32,22): error C2143: syntax error: missing ')' before '.'
-O:\All GitHub Projects\Team 24 Mission Calculations\EDLPart1.cpp(32,22): error C2660: 'Pres_Static': function does not take 0 arguments
-O:\All GitHub Projects\Team 24 Mission Calculations\EDLPart1.cpp(25,7): message : see declaration of 'Pres_Static'
-O:\All GitHub Projects\Team 24 Mission Calculations\EDLPart1.cpp(32,23): error C2059: syntax error: '.'
-O:\All GitHub Projects\Team 24 Mission Calculations\EDLPart1.cpp(32,52): error C2059: syntax error: ')'
+﻿  Deorbit.cpp
   Source.cpp
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.h(12,18): warning C4305: 'initializing': truncation from 'double' to 'float'
-O:\All GitHub Projects\Team 24 Mission Calculations\Deorbit.h(16,7): error C2365: 'Delta_V': redefinition; previous definition was 'data variable'
-O:\All GitHub Projects\Team 24 Mission Calculations\Constants.h(21): message : see declaration of 'Delta_V'
   Generating Code...
+  Team 24 Mission Calculations.vcxproj -> O:\All GitHub Projects\Team 24 Mission Calculations\Debug\Team 24 Mission Calculations.exe

@@ -1,16 +1,16 @@
 #include "EDLPart1.h"
 
-float Aeroshell_A(float Aeroshell_r)
+double Aeroshell_A(double Aeroshell_r)
 {
 	return ( M_PI * pow(Aeroshell_r,2) );
 }
 
-float Mass()
+double Mass()
 {
 	return ( M_Rover + M_EDL + M_Lander + M_Aeroshell );
 }
 
-float Temp(float Altitude)
+double Temp(double Altitude)
 {
 	if (Altitude >= 7000)
 	{
@@ -22,12 +22,12 @@ float Temp(float Altitude)
 	}
 }
 
-float Press_Static(float Altitude)
+double Press_Static(double Altitude)
 {
 	return ( .699 * exp(-.00009 * Altitude) );
 }
 
-float Atmos_Dense(float Altitude)
+double Atmos_Dense(double Altitude)
 {
 	return (Press_Static(Altitude) / (.1921 * (Temp(Altitude) + 273.1)));
 }

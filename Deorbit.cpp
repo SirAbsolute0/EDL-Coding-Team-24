@@ -1,67 +1,72 @@
 #include "Deorbit.h"
 #include <iostream>
 using namespace std;
+
+int I_sp = 0;
+double G_0 = 9.806;
      
-float v_e()
+double v_e()
 {
     return ( I_sp * G_0 );
 }   
       
-float Delta_V()
+double Delta_V()
 {
     return ( sqrt(G_Const * (M_Mars / Alt_0)) * (sqrt((2 * Alt_Entry) / (Alt_0 + Alt_Entry)) - 1) );
 }   
     
-float Mass_Fuel()
+double Mass_Fuel()
 {
     return ( 1 - exp(- Delta_V() / v_e()) );
 }    
     
-float G_Alt(float Altitude)
+double G_Alt(double Altitude)
 {
     return ( G_Const * M_Mars / pow(Altitude,2) );
 } 
 
-float Bal_num(float Mass, float Aeroshell_Cd, float Aeroshell_A)
+double Bal_num(double Mass, double Aeroshell_Cd, double Aeroshell_A)
 {
     return ( Mass / (Aeroshell_Cd * Aeroshell_A) );
 }    
  
-
-
-
-
-
-float Vel_term1()     //need more addressing
+double Vel_term1(double Bal_num, double Atmos_Dense, double G_Alt)    
 {
     
-   return sqrt((2 * Bal_num() * G_Alt / Atmo_Dense);
+   return  ( sqrt((2 * Bal_num * G_Alt / Atmos_Dense)) );
 }
-    
-                     
-float Vel_Sound() //need more addressing
+                         
+double Vel_Sound(double Temp) //need more addressing
 {
-    sqrt(1.4 * 287 * (Temp + 273.15);
+   return  sqrt(1.4 * 287 * (Temp + 273.1500)) ;
 }
-
                
-float Bal_num_impact()
+double Bal_num_impact()
 {
     return ( M_Lander + M_Rover + M_Airbags );
 }
                    
-float Vel_term2()
+double Vel_term2(double Atmos_Dense)
 {
-    sqrt( (2 * Bal_num_impact()) / Atmo_Dense);
+    return sqrt( (2 * Bal_num_impact()) / Atmos_Dense);
 }
                    
-float Vel()
+double Vel(double Altitude)
 {
-    sqrt(Vel ^ 2 + 2 * G_Const * M_Mars * Alt);
+    if (Altitude <= 100)
+    {
+       return sqrt(2 * G_Const * M_Mars * Altitude);
+    }
+    else
+    {
+        cout << "N/A. Since Altitude didn't reach below 100m, Vel value will not be calculated." << endl;
+        return 0;
+    }
+    
 }
 
-float Mach()
+double Mach(double Vel, double Vel_Sound)
 {
-    return ( Vel() / Vel_Sound() );
+    return ( Vel / Vel_Sound );
 }
 
