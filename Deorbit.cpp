@@ -30,10 +30,10 @@ double Bal_num(double Mass, double Aeroshell_Cd, double Aeroshell_A)
     return ( Mass / (Aeroshell_Cd * Aeroshell_A) );
 }    
  
-double Vel_term1(double Bal_num, double Atmos_Dense, double G_Alt)    
+double Vel_term1(double Bal_num, double Atmos_Dense)    
 {
     
-   return  ( sqrt((2 * Bal_num * G_Alt / Atmos_Dense)) );
+   return  ( sqrt((2 * Bal_num * G_Const / Atmos_Dense)) );
 }
                          
 double Vel_Sound(double Temp) //need more addressing
@@ -48,7 +48,7 @@ double Bal_num_impact()
                    
 double Vel_term2(double Atmos_Dense)
 {
-    return sqrt( (2 * Bal_num_impact()) / Atmos_Dense);
+    return sqrt( (2 * Bal_num_impact()) / Atmos_Dense );
 }
                    
 double Vel(double Altitude)

@@ -73,7 +73,7 @@ int main()
     double Bal_num_temp = Bal_num(Mass(), Aeroshell_Cd, Aeroshell_A(Aeroshell_r)); //Temporal solution to hold a long value
 
     cout << "Bal_num: " << Bal_num_temp << endl
-        << "Vel_term1: " << Vel_term1(Bal_num_temp, Atmos_Dense(Altitude), G_Alt(Altitude)) << endl;
+        << "Vel_term1: " << Vel_term1(Bal_num_temp, Atmos_Dense(Altitude)) << endl;
 
     double Vel_sound_temp = Vel_Sound(Temp(Altitude));                       //Also a temporal solution to hold value
 

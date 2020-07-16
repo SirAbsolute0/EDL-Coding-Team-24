@@ -12,7 +12,7 @@ double Delta_V();
 double Mass_Fuel();
 double G_Alt(double);
 double Bal_num(double, double, double);
-double Vel_term1(double, double, double);
+double Vel_term1(double, double);
 double Vel_Sound(double);
 double Bal_num_impact();
 double Vel_term2(double);
